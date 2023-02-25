@@ -12,8 +12,10 @@ class HomePage extends StatelessWidget {
         children: [
           ListTile(
             title: const Text('SfCalendar'),
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => const SyncfusionFlutterCalendar())),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                  builder: (context) => const SyncfusionFlutterCalendar()),
+            ),
           ),
           const ListTile(),
         ],
