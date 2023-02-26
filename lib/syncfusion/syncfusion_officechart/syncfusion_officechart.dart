@@ -10,6 +10,6 @@ class SyncfusionOfficechart extends StatefulWidget {
 class _SyncfusionOfficechartState extends State<SyncfusionOfficechart> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

@@ -4,12 +4,14 @@ class SyncfusionFlutterPdfviewer extends StatefulWidget {
   const SyncfusionFlutterPdfviewer({super.key});
 
   @override
-  State<SyncfusionFlutterPdfviewer> createState() => _SyncfusionFlutterPdfviewerState();
+  State<SyncfusionFlutterPdfviewer> createState() =>
+      _SyncfusionFlutterPdfviewerState();
 }
 
-class _SyncfusionFlutterPdfviewerState extends State<SyncfusionFlutterPdfviewer> {
+class _SyncfusionFlutterPdfviewerState
+    extends State<SyncfusionFlutterPdfviewer> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

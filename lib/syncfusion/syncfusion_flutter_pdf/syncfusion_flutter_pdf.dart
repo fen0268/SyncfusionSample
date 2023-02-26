@@ -10,6 +10,6 @@ class SyncfusionFlutterPdf extends StatefulWidget {
 class _SyncfusionFlutterPdfState extends State<SyncfusionFlutterPdf> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

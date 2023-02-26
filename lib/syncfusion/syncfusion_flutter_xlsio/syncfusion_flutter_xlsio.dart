@@ -10,6 +10,6 @@ class SyncfusionFlutterXlsio extends StatefulWidget {
 class _SyncfusionFlutterXlsioState extends State<SyncfusionFlutterXlsio> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

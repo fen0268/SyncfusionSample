@@ -6,9 +6,10 @@ class SyncfusionFlutterMaps extends StatefulWidget {
   @override
   State<SyncfusionFlutterMaps> createState() => _SyncfusionFlutterMapsState();
 }
+
 class _SyncfusionFlutterMapsState extends State<SyncfusionFlutterMaps> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
