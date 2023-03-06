@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class WorkWeek extends StatefulWidget {
   const WorkWeek({super.key});
@@ -10,6 +11,10 @@ class WorkWeek extends StatefulWidget {
 class _WorkWeekState extends State<WorkWeek> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: SfCalendar(
+        view: CalendarView.workWeek,
+      ),
+    );
   }
 }

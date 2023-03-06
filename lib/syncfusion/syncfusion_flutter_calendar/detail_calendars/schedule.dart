@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class Schedule extends StatefulWidget {
   const Schedule({super.key});
@@ -10,6 +11,10 @@ class Schedule extends StatefulWidget {
 class _ScheduleState extends State<Schedule> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: SfCalendar(
+        view: CalendarView.schedule,
+      ),
+    );;
   }
 }

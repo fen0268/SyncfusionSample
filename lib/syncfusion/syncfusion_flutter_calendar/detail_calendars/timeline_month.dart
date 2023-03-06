@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class TimelineMonth extends StatefulWidget {
   const TimelineMonth({super.key});
@@ -10,6 +11,10 @@ class TimelineMonth extends StatefulWidget {
 class _TimelineMonthState extends State<TimelineMonth> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: SfCalendar(
+        view: CalendarView.timelineMonth,
+      ),
+    );
   }
 }
