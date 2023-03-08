@@ -1,5 +1,4 @@
 name: flutter_syncfusion
-description: A new Flutter project.
 
 publish_to: 'none' 
 
@@ -9,13 +8,26 @@ environment:
   sdk: '>=2.18.6 <3.0.0'
 
 dependencies:
-
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  syncfusion_flutter_barcodes: ^20.4.52
-  syncfusion_flutter_calendar: ^20.4.52
-  syncfusion_officecore: ^20.4.52-beta
+  syncfusion_flutter_barcodes: ^20.4.53
+  syncfusion_flutter_calendar: ^20.4.53
+  syncfusion_flutter_charts: ^20.4.53
+  syncfusion_flutter_datagrid: ^20.4.53
+  syncfusion_flutter_datepicker: ^20.4.53
+  syncfusion_flutter_gauges: ^20.4.53
+  syncfusion_flutter_maps: ^20.4.53
+  syncfusion_flutter_pdf: ^20.4.53
+  syncfusion_flutter_pdfviewer: ^20.4.53
+  # サインするやつ
+  syncfusion_flutter_signaturepad: ^20.4.53
+  syncfusion_flutter_sliders: ^20.4.53
+  syncfusion_flutter_treemap: ^20.4.53-beta
+  syncfusion_flutter_xlsio: ^20.4.53-beta
+  syncfusion_localizations: ^20.4.53
+  syncfusion_officechart: ^20.4.53-beta
+  syncfusion_officecore: ^20.4.53-beta
 
 dev_dependencies:
   flutter_lints: ^2.0.0
