@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
 
 class SyncfusionFlutterCharts extends StatefulWidget {
   const SyncfusionFlutterCharts({super.key});
@@ -11,6 +12,12 @@ class SyncfusionFlutterCharts extends StatefulWidget {
 class _SyncfusionFlutterChartsState extends State<SyncfusionFlutterCharts> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          SfCartesianChart(),
+        ],
+      ),
+    );
   }
 }
