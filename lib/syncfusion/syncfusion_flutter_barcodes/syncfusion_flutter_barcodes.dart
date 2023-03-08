@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_barcodes/barcodes.dart';
 
 class SyncfusionFlutterBarcodes extends StatefulWidget {
   const SyncfusionFlutterBarcodes({super.key});
@@ -11,6 +12,14 @@ class SyncfusionFlutterBarcodes extends StatefulWidget {
 class _SyncfusionFlutterBarcodesState extends State<SyncfusionFlutterBarcodes> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: SfBarcodeGenerator(
+          value: 'https://pub.dev/packages/flutter_reflective_screensaver',
+          symbology: QRCode(),
+          showValue: true,
+        ),
+      ),
+    );
   }
 }
