@@ -11,6 +11,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  intl: ^0.17.0
+  path_provider: ^2.0.13
   syncfusion_flutter_barcodes: ^20.4.53
   syncfusion_flutter_calendar: ^20.4.53
   syncfusion_flutter_charts: ^20.4.53
