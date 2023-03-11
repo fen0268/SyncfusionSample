@@ -13,11 +13,29 @@ class _SyncfusionFlutterBarcodesState extends State<SyncfusionFlutterBarcodes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: SfBarcodeGenerator(
-          value: 'https://pub.dev/packages/flutter_reflective_screensaver',
-          symbology: QRCode(),
-          showValue: true,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              /// QRコードのわかりやすいまとめ記事
+              /// https://aimjal.co.jp/gijutu/2jigen/2jigen_k.html
+              SfBarcodeGenerator(
+                value: 'https://pub.dev/',
+                symbology: QRCode(),
+                showValue: true,
+              ),
+              SfBarcodeGenerator(
+                value: 'https://pub.dev/',
+                symbology: DataMatrix(),
+                showValue: true,
+              ),
+              SfBarcodeGenerator(
+                value: '150107',
+                symbology: UPCE(),
+                showValue: true,
+              ),
+            ],
+          ),
         ),
       ),
     );
