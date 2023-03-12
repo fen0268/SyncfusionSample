@@ -30,7 +30,7 @@ class _SyncfusionFlutterBarcodesState extends State<SyncfusionFlutterBarcodes> {
                 showValue: true,
               ),
               SfBarcodeGenerator(
-                value: '150107',
+                value: '123456',
                 symbology: UPCE(),
                 showValue: true,
               ),
