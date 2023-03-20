@@ -21,7 +21,7 @@ class _SyncfusionFlutterGaugesState extends State<SyncfusionFlutterGauges> {
   Widget _getRadialGauge() {
     return SfRadialGauge(
       title: const GaugeTitle(
-        text: 'Speedometer',
+        text: 'SpeedMeter',
         textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
       axes: <RadialAxis>[

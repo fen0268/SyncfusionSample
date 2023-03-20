@@ -10,7 +10,7 @@ class SyncfusionFlutterSignaturepad extends StatefulWidget {
 
 class _SyncfusionFlutterSignaturepadState
     extends State<SyncfusionFlutterSignaturepad> {
-  @override
+      @override
   Widget build(BuildContext context) {
     return const Scaffold();
   }
