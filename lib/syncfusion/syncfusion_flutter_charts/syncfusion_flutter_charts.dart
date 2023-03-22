@@ -9,6 +9,8 @@ class SyncfusionFlutterCharts extends StatefulWidget {
       _SyncfusionFlutterChartsState();
 }
 
+/// グラフ
+
 class _SyncfusionFlutterChartsState extends State<SyncfusionFlutterCharts> {
   @override
   Widget build(BuildContext context) {
