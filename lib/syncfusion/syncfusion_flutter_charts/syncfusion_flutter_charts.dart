@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_charts
 class SyncfusionFlutterCharts extends StatefulWidget {
   const SyncfusionFlutterCharts({super.key});
 

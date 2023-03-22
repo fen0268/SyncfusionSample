@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_sliders
 class SyncfusionFlutterSliders extends StatefulWidget {
   const SyncfusionFlutterSliders({super.key});
 

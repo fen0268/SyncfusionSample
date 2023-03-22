@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_gauges
 class SyncfusionFlutterGauges extends StatefulWidget {
   const SyncfusionFlutterGauges({super.key});
 

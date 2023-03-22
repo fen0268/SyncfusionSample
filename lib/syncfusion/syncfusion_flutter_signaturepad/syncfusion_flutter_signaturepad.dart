@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_signaturepad
 class SyncfusionFlutterSignaturepad extends StatefulWidget {
   const SyncfusionFlutterSignaturepad({super.key});
 
@@ -10,7 +11,7 @@ class SyncfusionFlutterSignaturepad extends StatefulWidget {
 
 class _SyncfusionFlutterSignaturepadState
     extends State<SyncfusionFlutterSignaturepad> {
-      @override
+  @override
   Widget build(BuildContext context) {
     return const Scaffold();
   }

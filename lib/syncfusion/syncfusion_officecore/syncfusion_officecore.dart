@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// https://pub.dev/packages/syncfusion_officecore
 class SyncfusionOfficecore extends StatefulWidget {
   const SyncfusionOfficecore({super.key});
 

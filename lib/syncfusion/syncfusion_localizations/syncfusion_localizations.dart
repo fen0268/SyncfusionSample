@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// https://pub.dev/packages/syncfusion_localizations
 class SyncfusionLocalizations extends StatefulWidget {
   const SyncfusionLocalizations({super.key});
 

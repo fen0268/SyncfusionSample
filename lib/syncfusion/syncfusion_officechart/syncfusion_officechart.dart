@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// https://pub.dev/packages/syncfusion_officechart
 class SyncfusionOfficechart extends StatefulWidget {
   const SyncfusionOfficechart({super.key});
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_maps
 class SyncfusionFlutterMaps extends StatefulWidget {
   const SyncfusionFlutterMaps({super.key});
 

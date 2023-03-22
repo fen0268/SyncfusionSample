@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_pdf
 class SyncfusionFlutterPdf extends StatefulWidget {
   const SyncfusionFlutterPdf({super.key});
 

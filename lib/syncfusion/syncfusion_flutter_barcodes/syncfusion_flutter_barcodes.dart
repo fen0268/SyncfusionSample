@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_barcodes/barcodes.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_barcodes
 class SyncfusionFlutterBarcodes extends StatefulWidget {
   const SyncfusionFlutterBarcodes({super.key});
 

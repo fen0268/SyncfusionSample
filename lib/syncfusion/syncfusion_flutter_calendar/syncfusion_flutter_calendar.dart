@@ -9,6 +9,7 @@ import 'detail_calendars/timeline_week.dart';
 import 'detail_calendars/week.dart';
 import 'detail_calendars/work_week.dart';
 
+/// https://pub.dev/packages/syncfusion_flutter_calendar
 class SyncfusionFlutterCalendar extends StatefulWidget {
   const SyncfusionFlutterCalendar({super.key});
 
