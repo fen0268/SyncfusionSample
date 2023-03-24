@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 import '../meeting.dart';
@@ -13,15 +14,18 @@ class Day extends StatefulWidget {
 class _DayState extends State<Day> {
   @override
   Widget build(BuildContext context) {
+    final deviceHeight = MediaQuery.of(context).size.height;
+    final deviceWidth = MediaQuery.of(context).size.width;
+    final calendarController = CalendarController();
+    final japaneseWeekdayFormat = DateFormat.yM('ja_JP');
     return Scaffold(
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.day,
           dataSource: MeetingDataSource(_getDataSource()),
-          monthViewSettings: const MonthViewSettings(
-            appointmentDisplayMode: MonthAppointmentDisplayMode.appointment,
-          ),
           todayHighlightColor: Colors.red,
+          todayTextStyle: const TextStyle(fontSize: 40),
+          // headerDateFormat: japaneseWeekdayFormat.format(DateTime.now()),
           cellBorderColor: Colors.grey,
           appointmentTextStyle: const TextStyle(color: Colors.white),
         ),
