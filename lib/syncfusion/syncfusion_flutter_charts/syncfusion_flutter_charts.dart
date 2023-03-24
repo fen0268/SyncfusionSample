@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'syncfusion_flutter_charts/cartesian_chart.dart';
 import 'syncfusion_flutter_charts/circular_chart.dart';
-import 'syncfusion_flutter_charts/line.dart';
 
 /// https://pub.dev/packages/syncfusion_flutter_charts
 class SyncfusionFlutterCharts extends StatefulWidget {
@@ -23,13 +23,17 @@ class _SyncfusionFlutterChartsState extends State<SyncfusionFlutterCharts> {
         children: [
           ListTile(
             title: const Text('Line'),
-            onTap: () => Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => const Line())),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const CartesianChart(),
+              ),
+            ),
           ),
           ListTile(
             title: const Text('CircularChart'),
             onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const CircularChart())),
+              MaterialPageRoute(builder: (context) => const CircularChart()),
+            ),
           ),
         ],
       ),

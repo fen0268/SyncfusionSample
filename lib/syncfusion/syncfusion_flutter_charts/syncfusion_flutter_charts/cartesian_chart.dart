@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class Line extends StatefulWidget {
-  const Line({super.key});
+class CartesianChart extends StatefulWidget {
+  const CartesianChart({super.key});
 
   @override
-  State<Line> createState() => _LineState();
+  State<CartesianChart> createState() => _CartesianChartState();
 }
 
-class _LineState extends State<Line> {
+class _CartesianChartState extends State<CartesianChart> {
   List<_SalesData> data = [
     _SalesData('Jan', 303),
     _SalesData('Feb', 314),
