@@ -13,14 +13,13 @@ class Month extends StatefulWidget {
 class _MonthState extends State<Month> {
   @override
   Widget build(BuildContext context) {
+    // final dateFormat = DateFormat('EE', 'ja_JP');
     return Scaffold(
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.month,
           dataSource: MeetingDataSource(_getDataSource()),
-          // by default the month appointment display mode set as Indicator, we can
-          // change the display mode as appointment using the appointment display
-          // mode property
+          headerHeight: 0,
           monthViewSettings: const MonthViewSettings(
             appointmentDisplayMode: MonthAppointmentDisplayMode.appointment,
           ),
@@ -32,14 +31,20 @@ class _MonthState extends State<Month> {
   List<Meeting> _getDataSource() {
     final meetings = <Meeting>[];
     final today = DateTime.now();
-    final startTime = DateTime(today.year, today.month, today.day, 9);
-    final endTime = startTime.add(const Duration(hours: 2));
     meetings.add(
       Meeting(
-        'Conference',
-        startTime,
-        endTime,
+        '質問zoom',
+        DateTime(today.year, today.month, today.day, 20),
+        DateTime(today.year, today.month, today.day, 21),
         const Color(0xFF0F8644),
+      ),
+    );
+    meetings.add(
+      Meeting(
+        '勉強会',
+        DateTime(today.year, today.month, today.day, 21),
+        DateTime(today.year, today.month, today.day, 22),
+        const Color.fromARGB(255, 212, 88, 125),
       ),
     );
     return meetings;
