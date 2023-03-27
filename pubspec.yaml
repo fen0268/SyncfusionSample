@@ -26,9 +26,17 @@ dependencies:
   syncfusion_flutter_signaturepad: ^20.4.53
   syncfusion_flutter_sliders: ^20.4.53
   syncfusion_flutter_treemap: ^20.4.53-beta
+
+  ### Excel 開けるパッケージ
   syncfusion_flutter_xlsio: ^20.4.53-beta
+
+  ### 多言語対応しやすいパッケージ
   syncfusion_localizations: ^20.4.53
+
+  ### user がグラフを作成することができるパッケージ
   syncfusion_officechart: ^20.4.53-beta
+
+  ### syncfusion_flutter_xlsio, syncfusion_flutter_officechart の依存パッケージ
   syncfusion_officecore: ^20.4.53-beta
 
 dev_dependencies:

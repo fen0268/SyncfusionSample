@@ -11,10 +11,6 @@ import 'syncfusion_flutter_pdfviewer/syncfusion_flutter_pdfviewer.dart';
 import 'syncfusion_flutter_signaturepad/syncfusion_flutter_signaturepad.dart';
 import 'syncfusion_flutter_sliders/syncfusion_flutter_sliders.dart';
 import 'syncfusion_flutter_treemap/syncfusion_flutter_treemap.dart';
-import 'syncfusion_flutter_xlsio/syncfusion_flutter_xlsio.dart';
-import 'syncfusion_localizations/syncfusion_localizations.dart';
-import 'syncfusion_officechart/syncfusion_officechart.dart';
-import 'syncfusion_officecore/syncfusion_officecore.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -132,46 +128,6 @@ class HomePage extends StatelessWidget {
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const SyncfusionFlutterTreemap(),
-                  ),
-                ),
-              ),
-
-              ///
-              ListTile(
-                title: const Text('SfXlsio'),
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const SyncfusionFlutterXlsio(),
-                  ),
-                ),
-              ),
-
-              ///
-              ListTile(
-                title: const Text('SLocalization'),
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const SyncfusionLocalizations(),
-                  ),
-                ),
-              ),
-
-              ///
-              ListTile(
-                title: const Text('SOfficechart'),
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const SyncfusionOfficechart(),
-                  ),
-                ),
-              ),
-
-              ///
-              ListTile(
-                title: const Text('SOfficeCore'),
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const SyncfusionOfficecore(),
                   ),
                 ),
               ),

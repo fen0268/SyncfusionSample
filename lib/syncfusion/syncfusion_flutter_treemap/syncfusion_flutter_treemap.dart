@@ -16,7 +16,7 @@ class _SyncfusionFlutterTreemapState extends State<SyncfusionFlutterTreemap> {
   @override
   void initState() {
     _source = const <SocialMediaUsers>[
-      SocialMediaUsers('India', 'Facebook', 25.4),
+      SocialMediaUsers('India', 'Facebook', 125.4),
       SocialMediaUsers('USA', 'Instagram', 19.11),
       SocialMediaUsers('Japan', 'Facebook', 13.3),
       SocialMediaUsers('Germany', 'Instagram', 10.65),
