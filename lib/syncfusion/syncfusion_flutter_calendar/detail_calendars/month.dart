@@ -15,6 +15,7 @@ class _MonthState extends State<Month> {
   Widget build(BuildContext context) {
     // final dateFormat = DateFormat('EE', 'ja_JP');
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.month,

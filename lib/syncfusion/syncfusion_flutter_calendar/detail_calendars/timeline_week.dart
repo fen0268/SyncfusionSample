@@ -14,6 +14,7 @@ class _TimelineWeekState extends State<TimelineWeek> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.timelineWeek,

@@ -19,6 +19,7 @@ class _DayState extends State<Day> {
     final calendarController = CalendarController();
     final japaneseWeekdayFormat = DateFormat('M月d日(EEE)', 'ja_JP');
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: SfCalendar(
           /// [view] カレンダーの種類を選択できるプロパティ

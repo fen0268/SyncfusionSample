@@ -14,6 +14,7 @@ class _WeekState extends State<Week> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.week,

@@ -14,6 +14,7 @@ class _TimelineMonthState extends State<TimelineMonth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.timelineMonth,

@@ -14,6 +14,7 @@ class _TimelineDayState extends State<TimelineDay> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.timelineDay,
