@@ -11,32 +11,76 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  fl_chart: ^0.61.0
   intl: ^0.17.0
+  localization: ^2.1.0
   path_provider: ^2.0.13
   pdf: ^3.9.0
+
+  ### 一次元、二次元バーコードの表示を実装するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_barcodes
   syncfusion_flutter_barcodes: ^20.4.53
+
+  ### 豊富なカスタマイズ機能でカレンダーを実装するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_calendar
   syncfusion_flutter_calendar: ^20.4.53
+
+  ### 折れ線グラフ、棒グラフ、円グラフ、金融チャート、マップなどを実装するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_charts
   syncfusion_flutter_charts: ^20.4.53
+
+  ### データグリッドを実装するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_datagrid
   syncfusion_flutter_datagrid: ^20.4.53
+
+  ### 日にちを指定するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_datepicker
   syncfusion_flutter_datepicker: ^20.4.53
+
+  ### メーターを実装するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_gauges
   syncfusion_flutter_gauges: ^20.4.53
+
+  ### map を実装するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_maps
   syncfusion_flutter_maps: ^20.4.53
+
+  ### pdf を作成、編集、表示するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_pdf
   syncfusion_flutter_pdf: ^20.4.53
+
+  ### pdf を拡大縮小、スクロール、印刷、ダウンロードなどを提供するパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_pdfviewer
   syncfusion_flutter_pdfviewer: ^20.4.53
+
+  ### サインが書けるパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_signaturepad
   syncfusion_flutter_signaturepad: ^20.4.53
+
+  ### スライダー、レンジスライダー、レンジセレクタを生成してくれるパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_sliders
   syncfusion_flutter_sliders: ^20.4.53
+
+  ### Treemap を生成してくれるパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_treemap
   syncfusion_flutter_treemap: ^20.4.53-beta
 
   ### Excel 開けるパッケージ
+  ### https://pub.dev/packages/syncfusion_flutter_xlsio
   syncfusion_flutter_xlsio: ^20.4.53-beta
 
-  ### 多言語対応しやすいパッケージ
+  ### syncfusion パッケージの多言語対応が実装しやすいパッケージ
+  ### https://pub.dev/packages/syncfusion_localizations
   syncfusion_localizations: ^20.4.53
 
   ### user がグラフを作成することができるパッケージ
+  ### https://pub.dev/packages/syncfusion_officechart
   syncfusion_officechart: ^20.4.53-beta
 
   ### syncfusion_flutter_xlsio, syncfusion_flutter_officechart の依存パッケージ
+  ### https://pub.dev/packages/syncfusion_officecore
   syncfusion_officecore: ^20.4.53-beta
 
 dev_dependencies:
