@@ -21,11 +21,23 @@ class _SyncfusionFlutterDatagridState extends State<SyncfusionFlutterDatagrid> {
     employeeDataSource = EmployeeDataSource(employeeData: employees);
   }
 
+  void _changeDataSourceOrder() {
+    employees = employees.reversed.toList(); // データソースの順序を反転する
+    employeeDataSource = EmployeeDataSource(employeeData: employees);
+    setState(() {}); // ウィジェットを再構築する
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Syncfusion Flutter DataGrid'),
+        actions: [
+          GestureDetector(
+            onTap: _changeDataSourceOrder,
+            child: const Icon(Icons.abc),
+          )
+        ],
       ),
       body: SfDataGrid(
         source: employeeDataSource,

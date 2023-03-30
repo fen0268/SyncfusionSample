@@ -19,12 +19,28 @@ class _ScheduleState extends State<Schedule> {
         child: SfCalendar(
           view: CalendarView.schedule,
           dataSource: MeetingDataSource(_getDataSource()),
-          // by default the month appointment display mode set as Indicator, we can
-          // change the display mode as appointment using the appointment display
-          // mode property
-          monthViewSettings: const MonthViewSettings(
-            appointmentDisplayMode: MonthAppointmentDisplayMode.appointment,
-          ),
+
+          /// scheduleViewMonthHeaderBuilder
+          // scheduleViewMonthHeaderBuilder: (buildContext, details) {
+          //   final outputFormat = DateFormat('yyyy年 M月');
+          //   return Stack(
+          //     children: [
+          //       Image(
+          //         image: const AssetImage('assets/IMG_7223.jpg'),
+          //         fit: BoxFit.cover,
+          //         width: details.bounds.width,
+          //         height: details.bounds.height,
+          //       ),
+          //       Positioned(
+          //         left: details.bounds.width * 0.05,
+          //         top: details.bounds.height * 0.05,
+          //         child: Text(
+          //           outputFormat.format(details.date),
+          //         ),
+          //       ),
+          //     ],
+          //   );
+          // },
         ),
       ),
     );

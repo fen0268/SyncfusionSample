@@ -9,12 +9,12 @@ class CartesianChart extends StatefulWidget {
 }
 
 class _CartesianChartState extends State<CartesianChart> {
-  List<_SalesData> data = [
-    _SalesData('Jan', 303),
-    _SalesData('Feb', 314),
-    _SalesData('Mar', 334),
-    _SalesData('Apr', 367),
-    _SalesData('May', 380)
+  List<SalesData> data = [
+    SalesData('Jan', 303),
+    SalesData('Feb', 314),
+    SalesData('Mar', 334),
+    SalesData('Apr', 367),
+    SalesData('May', 380)
   ];
   @override
   Widget build(BuildContext context) {
@@ -35,8 +35,8 @@ class _CartesianChartState extends State<CartesianChart> {
 
             /// グラフの x, y の値が交わるところでタップするとダイアログで表示してくれる
             tooltipBehavior: TooltipBehavior(enable: true),
-            series: <ChartSeries<_SalesData, String>>[
-              LineSeries<_SalesData, String>(
+            series: <ChartSeries<SalesData, String>>[
+              LineSeries<SalesData, String>(
                 dataSource: data,
                 xValueMapper: (sales, _) => sales.year,
                 yValueMapper: (sales, _) => sales.sales,
@@ -52,8 +52,8 @@ class _CartesianChartState extends State<CartesianChart> {
   }
 }
 
-class _SalesData {
-  _SalesData(this.year, this.sales);
+class SalesData {
+  SalesData(this.year, this.sales);
 
   final String year;
   final double sales;

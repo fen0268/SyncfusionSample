@@ -57,6 +57,7 @@ class _SyncfusionFlutterMapsState extends State<SyncfusionFlutterMaps> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SizedBox(
         height: 520,
         child: Center(

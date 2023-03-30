@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 
 /// https://pub.dev/packages/syncfusion_flutter_sliders
@@ -13,6 +11,8 @@ class SyncfusionFlutterSliders extends StatefulWidget {
 }
 
 class _SyncfusionFlutterSlidersState extends State<SyncfusionFlutterSliders> {
+  double sliValue = 30;
+  SfRangeValues _values = const SfRangeValues(4.0, 48.0);
   final List<Data> _chartData = <Data>[
     Data(x: DateTime(2003, 01, 01), y: 3.4),
     Data(x: DateTime(2004, 01, 01), y: 2.8),
@@ -42,37 +42,69 @@ class _SyncfusionFlutterSlidersState extends State<SyncfusionFlutterSliders> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 10),
-              child: Center(
-                // ignore: missing_required_param
-                child: SfRangeSelector(
-                  min: _dateMin,
-                  max: _dateMax,
-                  initialValues: _dateValues,
-                  interval: 1,
-                  dateIntervalType: DateIntervalType.years,
-                  dateFormat: DateFormat.y(),
-                  showTicks: true,
-                  showLabels: true,
-                  child: SizedBox(
-                    child: SfCartesianChart(
-                      margin: EdgeInsets.zero,
-                      primaryXAxis: DateTimeAxis(
-                        minimum: _dateMin,
-                        maximum: _dateMax,
-                        isVisible: false,
-                      ),
-                      primaryYAxis: NumericAxis(isVisible: false, maximum: 4),
-                      series: <SplineAreaSeries<Data, DateTime>>[
-                        SplineAreaSeries<Data, DateTime>(
-                          dataSource: _chartData,
-                          xValueMapper: (sales, index) => sales.x,
-                          yValueMapper: (sales, index) => sales.y,
-                        )
-                      ],
-                    ),
-                    height: 200,
+              child: Column(
+                children: [
+                  /// スライダー
+                  Slider(
+                    min: 0,
+                    max: 100,
+                    value: sliValue,
+                    onChanged: (values) {
+                      setState(() {
+                        sliValue = values;
+                      });
+                    },
                   ),
-                ),
+                  SfSlider.vertical(
+                    min: 0.0,
+                    max: 100.0,
+                    value: sliValue,
+                    onChangeStart: (value) {
+                      setState(() {
+                        sliValue = value;
+                      });
+                    },
+                    onChangeEnd: (value) {
+                      setState(() {
+                        sliValue = value;
+                      });
+                    },
+                    onChanged: (values) {
+                      setState(() {
+                        sliValue = values;
+                      });
+                    },
+                  ),
+
+                  /// レンジスライダー
+                  SfRangeSlider(
+                    min: 0,
+                    max: 100,
+                    interval: 1,
+                    onChangeStart: (value) {
+                      setState(
+                        () {
+                          _values = value;
+                        },
+                      );
+                    },
+                    onChangeEnd: (value) {
+                      setState(
+                        () {
+                          _values = value;
+                        },
+                      );
+                    },
+                    values: _values,
+                    onChanged: (values) {
+                      setState(
+                        () {
+                          _values = values;
+                        },
+                      );
+                    },
+                  ),
+                ],
               ),
             ),
           ],
