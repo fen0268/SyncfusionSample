@@ -9,11 +9,9 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  fl_chart: ^0.61.0
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  fl_chart: ^0.61.0
   intl: ^0.17.0
   localization: ^2.1.0
   path_provider: ^2.0.13
@@ -31,7 +29,7 @@ dependencies:
   ### https://pub.dev/packages/syncfusion_flutter_charts
   syncfusion_flutter_charts: ^20.4.53
 
-  ### データグリッドを実装するパッケージ
+  ### 表形式でのデータ表示を実装するパッケージ
   ### https://pub.dev/packages/syncfusion_flutter_datagrid
   syncfusion_flutter_datagrid: ^20.4.53
 
