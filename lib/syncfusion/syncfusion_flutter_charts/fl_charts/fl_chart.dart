@@ -17,11 +17,10 @@ class _FlChartState extends State<FlChart> {
           lineBarsData: [
             LineChartBarData(
               spots: const [
-                _SalesData('Jan', 303),
-                _SalesData('Feb', 314),
-                _SalesData('Mar', 334),
-                _SalesData('Apr', 367),
-                _SalesData('May', 380)
+                FlSpot(1, 303),
+                FlSpot(2, 334),
+                FlSpot(3, 367),
+                FlSpot(4, 380),
               ],
             )
           ],

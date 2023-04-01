@@ -27,7 +27,7 @@ class _DayState extends State<Day> {
 
           /// [dataSource] カレンダーに表示するデータをリスト形式で格納
           dataSource: MeetingDataSource(
-            _getDataSource(),
+            getDataSource(),
           ),
 
           /// 左上の日付のフォーマット
@@ -59,7 +59,7 @@ class _DayState extends State<Day> {
     );
   }
 
-  List<Meeting> _getDataSource() {
+  List<Meeting> getDataSource() {
     final meetings = <Meeting>[];
     final today = DateTime.now();
     meetings.add(

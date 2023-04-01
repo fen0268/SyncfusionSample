@@ -18,7 +18,7 @@ class _ScheduleState extends State<Schedule> {
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.schedule,
-          dataSource: MeetingDataSource(_getDataSource()),
+          dataSource: MeetingDataSource(getDataSource()),
 
           /// scheduleViewMonthHeaderBuilder
           // scheduleViewMonthHeaderBuilder: (buildContext, details) {
@@ -46,7 +46,7 @@ class _ScheduleState extends State<Schedule> {
     );
   }
 
-  List<Meeting> _getDataSource() {
+  List<Meeting> getDataSource() {
     final meetings = <Meeting>[];
     final today = DateTime.now();
     final startTime = DateTime(today.year, today.month, today.day, 9);

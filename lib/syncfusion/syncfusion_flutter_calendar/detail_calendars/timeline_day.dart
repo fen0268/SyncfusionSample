@@ -18,7 +18,7 @@ class _TimelineDayState extends State<TimelineDay> {
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.timelineDay,
-          dataSource: MeetingDataSource(_getDataSource()),
+          dataSource: MeetingDataSource(getDataSource()),
           // by default the month appointment display mode set as Indicator, we can
           // change the display mode as appointment using the appointment display
           // mode property
@@ -30,7 +30,7 @@ class _TimelineDayState extends State<TimelineDay> {
     );
   }
 
-  List<Meeting> _getDataSource() {
+  List<Meeting> getDataSource() {
     final meetings = <Meeting>[];
     final today = DateTime.now();
     final startTime = DateTime(today.year, today.month, today.day, 9);

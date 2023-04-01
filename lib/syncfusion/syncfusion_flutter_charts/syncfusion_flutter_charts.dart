@@ -34,6 +34,11 @@ class _SyncfusionFlutterChartsState extends State<SyncfusionFlutterCharts> {
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (context) => const CircularChart()),
             ),
+          ),ListTile(
+            title: const Text('fl_chart'),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => const CircularChart()),
+            ),
           ),
         ],
       ),

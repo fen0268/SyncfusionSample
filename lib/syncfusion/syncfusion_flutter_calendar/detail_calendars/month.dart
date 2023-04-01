@@ -19,7 +19,7 @@ class _MonthState extends State<Month> {
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.month,
-          dataSource: MeetingDataSource(_getDataSource()),
+          dataSource: MeetingDataSource(getDataSource()),
           headerHeight: 0,
           monthViewSettings: const MonthViewSettings(
             appointmentDisplayMode: MonthAppointmentDisplayMode.appointment,
@@ -29,7 +29,7 @@ class _MonthState extends State<Month> {
     );
   }
 
-  List<Meeting> _getDataSource() {
+  List<Meeting> getDataSource() {
     final meetings = <Meeting>[];
     final today = DateTime.now();
     meetings.add(

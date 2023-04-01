@@ -18,10 +18,7 @@ class _TimelineWeekState extends State<TimelineWeek> {
       body: SafeArea(
         child: SfCalendar(
           view: CalendarView.timelineWeek,
-          dataSource: MeetingDataSource(_getDataSource()),
-          // by default the month appointment display mode set as Indicator, we can
-          // change the display mode as appointment using the appointment display
-          // mode property
+          dataSource: MeetingDataSource(getDataSource()),
           monthViewSettings: const MonthViewSettings(
             appointmentDisplayMode: MonthAppointmentDisplayMode.appointment,
           ),
@@ -30,7 +27,7 @@ class _TimelineWeekState extends State<TimelineWeek> {
     );
   }
 
-  List<Meeting> _getDataSource() {
+  List<Meeting> getDataSource() {
     final meetings = <Meeting>[];
     final today = DateTime.now();
     final startTime = DateTime(today.year, today.month, today.day, 9);
